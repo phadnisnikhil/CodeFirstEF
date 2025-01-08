@@ -11,7 +11,7 @@ builder.Services.AddDbContext<EmployeeDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("myconn")));
 //builder.Services.AddSingleton<Class>();
 builder.Services.AddScoped<EmployeeDbContext>();
-builder.Services.AddScoped<Class>();
+builder.Services.AddSingleton<Calculator>();
 //builder.Services.AddTransient<Class>();
 var app = builder.Build();
 

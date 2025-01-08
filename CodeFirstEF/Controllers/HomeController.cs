@@ -7,19 +7,18 @@ namespace CodeFirstEF.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly Class _class;
         private readonly EmployeeDbContext _empdbContext;
         private readonly ILogger<HomeController> _logger;
-        public HomeController(ILogger<HomeController> logger, Class ObjCls,EmployeeDbContext EmpDbconnect)
+        public HomeController(ILogger<HomeController> logger,EmployeeDbContext EmpDbconnect)
         {
             _logger = logger;
-            _class = ObjCls;
+            
             _empdbContext= EmpDbconnect;
         }
        
         public IActionResult Index()
         {
-            _class.Method();
+            
             ////var query = from customer in _empdbContext.Employees
             ////            where customer.Name == "Reyansh"
             ////            select customer;
