@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var data = ViewBag.resultSet;
+    <table>
+        <thead>
+            <tr>
+                <th>Addition Result &nbsp;</th>
+                <th>&nbsp; Subtraction Result</th>
+                <th>&nbsp; Multiplication result</th>
+                <th>&nbsp; Division Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                <td align="center">@data[0]</td>
+                <td align="center">@data[1]</td>
+                <td align="center">@data[2]</td>
+                <td align="center">@data[3]</td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+}
