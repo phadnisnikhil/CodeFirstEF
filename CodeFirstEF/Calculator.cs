@@ -4,6 +4,7 @@
     public abstract class AbsCalculator
 
     {
+        //Constructor to check if executes class is instantiated
         public AbsCalculator()
         {
             Console.WriteLine("AbsCalculator Constructor Called");
