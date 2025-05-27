@@ -2,7 +2,13 @@
 {
 
     public abstract class AbsCalculator
+
     {
+        public AbsCalculator()
+        {
+            Console.WriteLine("AbsCalculator Constructor Called");
+        }
+
         public abstract int Add(int a, int b);
         public abstract int Subtract(int a, int b);
         public abstract int Multiply(int a, int b);
